@@ -38,6 +38,7 @@ const WeatherComponent = () => {
           })
           .catch((e) => {
             setData({
+              lastUpdate: getDateNow(),
               isconnected: false,
               error: e.message,
               loading: false,

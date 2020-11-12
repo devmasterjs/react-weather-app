@@ -6,11 +6,13 @@ import "./error-component.styles.css";
 function ErrorCompoenent(props) {
   return props.error ? (
     <div>
-      <div className="icon">
-        <FontAwesomeIcon icon={faFrownOpen} size={"10x"} color="red" />
-      </div>
+      <FontAwesomeIcon
+        className="icon"
+        color="blueviolet"
+        icon={faFrownOpen}
+        size={"10x"}
+      />
       <div className="error">
-        <span>Error: </span>
         {props.error}
         <div>Try again !</div>
       </div>
