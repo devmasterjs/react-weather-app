@@ -6,13 +6,21 @@ To do this search, the Open Weather Map API is used [http://api.openweathermap.o
 
 ## Screenshots
 
-### web
+### Weather Web Page
 
-![Weather Component Web](https://github.com/devmasterjs/react-weather-app/tree/main/public/images/weather-page-web.png)
+![Weather_Page_Web](public/images/weather-page-web.png?raw=true)
 
-![Error Component Mobile](https://github.com/devmasterjs/react-weather-app/tree/main/public/images/error-component-web.png)
+### Error Component
 
-### mobile
+![Error_Component_Mobile](public/images/error-component-web.png?raw=true)
+
+### Weather Mobile Page
+
+![Weather_Page_Web](public/images/weather-page-mobile.png?raw=true)
+
+### Error Mobile Component
+
+![Error_Component_Mobile](public/images/error-component-mobile.png?raw=true)
 
 ## Installation
 
