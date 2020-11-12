@@ -2,7 +2,7 @@
 
 This application uses the user's current location and displays the current address of the region's climatic data and a button to update the data on the interface.
 
-To do this search, the Open Weather Map API is used [http://api.openweathermap.org/]
+To do this search, the Open Weather API is used [https://openweathermap.org]
 
 ## Screenshots
 
@@ -31,6 +31,8 @@ Run yarn command for install the project dependencies.
 ## Configure Open Weather Web API-KEY
 
 To use the OpenWeather API key, it is necessary to change the expression {API-KEY} by its corresponding API key.
+
+To create a API-KEY in OpenWeather site, read this page and follow the instructions: [https://openweathermap.org/appid]
 
 This configuration is found in the .env file that is located in the main folder of the application.
 
