@@ -1,8 +1,28 @@
-# React-Test - Open Weather Web
+# React Open Weather Web
 
 This application uses the user's current location and displays the current address of the region's climatic data and a button to update the data on the interface.
 
 To do this search, the Open Weather Map API is used [http://api.openweathermap.org/]
+
+## Configure Open Weather Web API-KEY
+
+To use the OpenWeather API key, it is necessary to change the expression {API-KEY} by its corresponding API key.
+
+This configuration is found in the .env file that is located in the main folder of the application.
+
+If it does not exist, you can create it according to the example below:
+
+```
+REACT_APP_OPEN_WEATHER_API_KEY={API-KEY}
+```
+
+Let's say your OpenWeather api key is 1234567890987654321.
+
+In this case, change the contents of the .env file to:
+
+```
+REACT_APP_OPEN_WEATHER_API_KEY=1234567890987654321
+```
 
 ## Available Scripts
 
