@@ -23,7 +23,7 @@ const WeatherComponent = () => {
           .get(getUrl())
           .then((response) => {
             setData({
-              address: `${response.data.name} - ${response.data.sys.country}`,
+              address: `${response.data.name}, ${response.data.sys.country}`,
               country: response.data.sys.country,
               icon: ` http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
               description: response.data.weather[0].description,
@@ -36,11 +36,10 @@ const WeatherComponent = () => {
               loading: false,
             });
           })
-          .catch((error) => {
-            console.log(error);
+          .catch((e) => {
             setData({
               isconnected: false,
-              error: error.message,
+              error: e.message,
               loading: false,
             });
           });
@@ -52,9 +51,11 @@ const WeatherComponent = () => {
         await navigator.geolocation.getCurrentPosition(updatePosition);
         await getWeatherData();
       } catch (e) {
-        console.warn(e);
-      } finally {
-        console.log(position);
+        setData({
+          isconnected: false,
+          error: e.message,
+          loading: false,
+        });
       }
     }
 
@@ -64,6 +65,7 @@ const WeatherComponent = () => {
 
   function UpdateData() {
     setPosition({ latitude: 0, longitude: 0 });
+    setData({ loading: true });
   }
 
   const mpsTokmh = (speed) => {
@@ -97,6 +99,10 @@ const WeatherComponent = () => {
         <LoadingComponent />
       ) : data.isconnected ? (
         <div>
+          <div className="location">
+            <h2>{data.address}</h2>
+          </div>
+
           <div>
             <img
               src={data.icon}
@@ -105,10 +111,7 @@ const WeatherComponent = () => {
               height={150}
             />
           </div>
-          <div>
-            <h2>Location: {data.address}</h2>
-          </div>
-          <div>
+          <div className="weather-data">
             <div>
               <span>Temperature: </span>
               {data.temperature} <sup>o</sup>C

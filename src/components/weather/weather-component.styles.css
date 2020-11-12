@@ -3,14 +3,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid green;
+  border: 1px solid white;
   width: 75vw;
-  height: 75vh;
+  height: 80vh;
   border-radius: 25px;
 }
+
 div {
-  padding: 12px;
+  padding: 10px;
   text-align: center;
+}
+
+.location {
+  font-size: 25px;
+}
+
+.weather-data {
+  font-size: 22px;
 }
 
 button {
@@ -21,8 +30,9 @@ button {
 img {
   background-color: green;
   border-radius: 50%;
+  box-shadow: 5px 5px 15px 5px #000000;
 }
 
 span {
-  font-weight: 700;
+  font-weight: 100;
 }
