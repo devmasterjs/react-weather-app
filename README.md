@@ -4,6 +4,12 @@ This application uses the user's current location and displays the current addre
 
 To do this search, the Open Weather Map API is used [http://api.openweathermap.org/]
 
+## Installation
+
+### `yarn`
+
+Run yarn command for install the project dependencies.
+
 ## Configure Open Weather Web API-KEY
 
 To use the OpenWeather API key, it is necessary to change the expression {API-KEY} by its corresponding API key.
