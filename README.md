@@ -4,6 +4,16 @@ This application uses the user's current location and displays the current addre
 
 To do this search, the Open Weather Map API is used [http://api.openweathermap.org/]
 
+## Screenshots
+
+### web
+
+![Weather Component Web](https://github.com/devmasterjs/react-weather-app/tree/main/public/images/weather-page-web.png)
+
+![Error Component Mobile](https://github.com/devmasterjs/react-weather-app/tree/main/public/images/error-component-web.png)
+
+### mobile
+
 ## Installation
 
 ### `yarn`
