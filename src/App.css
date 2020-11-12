@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid red;
-  width: 99vw;
-  height: 98vh;
+  width: 90vw;
+  height: 94vh;
 }

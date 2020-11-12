@@ -4,6 +4,8 @@
   align-items: center;
   justify-content: space-evenly;
   border: solid 1px #444;
-  width: 92vw;
-  height: 93vh;
+  width: 82vw;
+  height: 88vh;
+  box-shadow: 5px 5px 15px 5px #000000;
+  border-radius: 20px;
 }

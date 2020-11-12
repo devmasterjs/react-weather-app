@@ -1,0 +1,11 @@
+.error {
+  color: red;
+  font-size: x-large;
+  padding: 30px;
+}
+
+.icon {
+  box-shadow: 5px 5px 15px 5px hsl(0, 80%, 18%);
+  border-radius: 50%;
+  padding: 60px;
+}
