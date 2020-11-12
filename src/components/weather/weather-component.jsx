@@ -99,38 +99,40 @@ const WeatherComponent = () => {
       {data.loading ? (
         <LoadingComponent />
       ) : data.isconnected ? (
-        <div>
-          <div className="location">
-            <h2>{data.address}</h2>
+        <div className="weather-data">
+          <div className="weather-location">
+            <div className="location">
+              <h2>{data.address}</h2>
+            </div>
+
+            <div>
+              <img
+                src={data.icon}
+                alt="Imagem do Tempo"
+                width={150}
+                height={150}
+              />
+            </div>
           </div>
 
-          <div>
-            <img
-              src={data.icon}
-              alt="Imagem do Tempo"
-              width={150}
-              height={150}
-            />
-          </div>
-          <div className="weather-data">
-            <div>
-              <span>Temperature: </span>
+          <div className="weather-temp-container">
+            <div className="weather-temp">
               {data.temperature} <sup>o</sup>C
             </div>
-            <div>
-              <span>Description: </span>
-              {data.description}
-            </div>
-            <div>
-              <span>Wind Speed: </span>
+            <div className="weather-description">{data.description}</div>
+          </div>
+
+          <div className="weather-data-now">
+            <div className="weather-data-now-item">
+              <div>Wind Speed</div>
               {data.windspeed} Km/h
             </div>
-            <div>
-              <span>Humidity: </span>
+            <div className="weather-data-now-item">
+              <div>Humidity: </div>
               {data.humidity}%
             </div>
-            <div>
-              <span>Pressure: </span>
+            <div className="weather-data-now-item">
+              <div>Pressure: </div>
               {data.pressure} hPa
             </div>
           </div>
@@ -144,7 +146,7 @@ const WeatherComponent = () => {
       <div className="button">
         <button onClick={UpdateData}>Update</button>
       </div>
-      <div>
+      <div className="lastUpdated">
         <span>Last Updated: </span>
         {data.lastUpdate}
       </div>
