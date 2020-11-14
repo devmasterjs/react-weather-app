@@ -1,8 +1,8 @@
-import { render, screen } from "@testing-library/react";
-import App from "./App";
+import { render, screen } from '@testing-library/react';
+import App from './App';
 
-test("renders Page Title", () => {
+test('renders Page Title', () => {
   render(<App />);
-  const titlePage = screen.getByText(/Weather Page/i);
+  const titlePage = screen.getByText(/TEMPO AGORA EM/i);
   expect(titlePage).toBeInTheDocument();
 });
