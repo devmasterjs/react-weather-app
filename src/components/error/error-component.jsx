@@ -10,7 +10,7 @@ function ErrorCompoenent(props) {
         className="icon"
         color="blueviolet"
         icon={faFrownOpen}
-        size={"10x"}
+        size={"8x"}
       />
       <div className="error">
         {props.error}

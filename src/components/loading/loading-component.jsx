@@ -6,7 +6,7 @@ import "./loading-component.styles.css";
 function LoadingComponent(props) {
   return (
     <div className="icon-spin">
-      <FontAwesomeIcon icon={faSync} size={"10x"} color="white" />
+      <FontAwesomeIcon icon={faSync} size={"8x"} color="white" />
     </div>
   );
 }

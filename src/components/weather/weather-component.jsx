@@ -106,12 +106,7 @@ const WeatherComponent = () => {
             </div>
 
             <div>
-              <img
-                src={data.icon}
-                alt="Imagem do Tempo"
-                width={150}
-                height={150}
-              />
+              <img src={data.icon} alt="Imagem do Tempo" />
             </div>
           </div>
 
@@ -123,7 +118,7 @@ const WeatherComponent = () => {
           </div>
 
           <div className="weather-data-now">
-            <div className="weather-data-now-item">
+            <div className="weather-data-now-item wind-speed">
               <div>Wind Speed</div>
               {data.windspeed} Km/h
             </div>
